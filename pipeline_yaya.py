@@ -151,6 +151,5 @@ if __name__ == '__main__':
         import shutil
         shutil.rmtree('serving_model', ignore_errors=True)
 
-    print("Menjalankan pipeline TFX end-to-end...")
     local_dag_runner.LocalDagRunner().run(create_pipeline())
-    print("Pipeline Selesai.")
+    print("Selesai.")
